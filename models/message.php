@@ -45,9 +45,7 @@ class Message{
   {
     require_once("./idiorm.php");
     include("./db.php");
-    $message = ORM::for_table('messages')
-      ->where('id',$id)
-      ->find_one();
+    $message = ORM::for_table('messages')->find_one($id);
     $message->delete();
     $message->save();
   }
