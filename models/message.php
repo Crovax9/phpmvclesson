@@ -45,7 +45,7 @@ class Message{
   {
     require_once("./idiorm.php");
     include("./db.php");
-    $message = ORM::for_table('message')
+    $message = ORM::for_table('messages')
       ->delete($id);
     $message->save();
   }
