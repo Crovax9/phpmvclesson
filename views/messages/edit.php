@@ -27,7 +27,7 @@
       </div>
     </form>
     
-    <form action="../update/<?= $message[id] ?>/" method="post">
+    <form action="../destroy/<?= $message[id] ?>/" method="post">
 
       <div class="form">
         <input type="submit" name="delete">
