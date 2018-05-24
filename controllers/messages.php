@@ -29,6 +29,9 @@ class MessagesController{
   }
   
   function destroy($id){
-    
+    require('./models/message.php');
+    $message = Message::delete($id);
+    header('Location: ../../');
+    exit;
   }
 }
