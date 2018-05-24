@@ -30,7 +30,7 @@
     <form action="../destroy/<?= $message[id] ?>/" method="post">
 
       <div class="form">
-        <input type="submit" name="delete">
+        <input type="submit" name="delete" value="delete">
       </div>
     </form>
   </body>
